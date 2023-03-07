@@ -25,7 +25,7 @@ def square():
     :return:
     '''
     for i in range (4):
-        fd(n)
+        fd(m)
         rt(90)
 
 
