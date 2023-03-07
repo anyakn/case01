@@ -43,6 +43,18 @@ def triangle():
     fd(2**0.5*n/2)
     lt(135)
 
+def rectangle():
+    '''
+    Function is drawing rectangle
+    TODO: From Karolina
+    :return:
+    '''
+    for _ in range(2)
+        fd(a)
+        lt(90)
+        fd(b)
+        lt(90)
+
 
 
 
