@@ -1,4 +1,4 @@
-def circle():
+def circle(c):
     '''
     Function is drawing circle
     TODO: From Anya
@@ -7,7 +7,7 @@ def circle():
     circle(c)
     lt(90)
 
-def semicircle():
+def semicircle(r):
     '''
     Function is drawing semicircle
     TODO: From Anya
@@ -19,7 +19,7 @@ def semicircle():
 
 
 
-def square():
+def square(m):
     '''
     Function is drawing square
     TODO: From Uliana
@@ -31,7 +31,7 @@ def square():
 
 
 
-def triangle():
+def triangle(n):
     '''
     Function is drawing triangle
     TODO: From Uliana
@@ -44,7 +44,7 @@ def triangle():
     fd(2**0.5*n/2)
     lt(135)
 
-def rectangle():
+def rectangle(a,b):
     '''
     Function is drawing rectangle
     TODO: From Karolina
@@ -55,7 +55,5 @@ def rectangle():
         lt(90)
         fd(b)
         lt(90)
-
-
 
 
