@@ -28,3 +28,15 @@ def square():
         fd(n)
         rt(90)
 
+
+
+def triangle():
+    '''
+    Function is drawing triangle
+    TODO: From Uliana
+    :return:
+    '''
+    fd(n)
+    lt(135)
+    fd(2**0.5*n/2)
+
