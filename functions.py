@@ -4,7 +4,7 @@ def circle():
     TODO: From Anya
     :return:
     '''
-    circle(n)
+    circle(c)
     lt(90)
 
 def semicircle():
@@ -13,8 +13,9 @@ def semicircle():
     TODO: From Anya
     :return:
     '''
-    circle(n,180)
+    circle(r,180)
     rt(90)
+    bk(r*2)
 
 
 
