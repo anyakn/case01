@@ -134,7 +134,7 @@ rt(45)
 
 goto(300, -300)
 lt(90)
-color('darkturquoise', 'darkturquoise')
+color('cornflowerblue', 'cornflowerblue')
 begin_fill()
 pd()
 circle(150, 180)
