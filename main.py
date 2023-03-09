@@ -1,6 +1,8 @@
 
 from turtle import *
-def circle(c):
+
+
+def circle1(c):
     '''
     Function is drawing circle
     TODO: From Anya
@@ -9,16 +11,16 @@ def circle(c):
     circle(c)
     lt(90)
 
-def semicircle(r):
+
+def semicircle(r,ang):
     '''
     Function is drawing semicircle
     TODO: From Anya
     :return:
     '''
-    circle(r,180)
+    circle(r,ang)
     rt(90)
     bk(r*2)
-
 
 
 def square(m):
@@ -27,10 +29,9 @@ def square(m):
     TODO: From Uliana
     :return:
     '''
-    for i in range (4):
+    for i in range(4):
         fd(m)
         rt(90)
-
 
 
 def triangle(n):
@@ -46,6 +47,7 @@ def triangle(n):
     fd(2**0.5*n/2)
     lt(135)
 
+
 def rectangle(a,b):
     '''
     Function is drawing rectangle
@@ -59,57 +61,128 @@ def rectangle(a,b):
         lt(90)
 
 pu()
+speed(10)
 
-goto(-300,300)
+goto(-300, 300)
 shape('turtle')
 bgcolor('navy')
 pd()
 square(600)
 pu()
 
-goto(-310,300)
-color('white','white')
+goto(-310, 300)
+color('white', 'white')
 begin_fill()
 pd()
-rectangle(620,10)
+rectangle(620, 10)
 end_fill()
 pu()
 
-goto(300,-310)
+goto(300, -310)
 begin_fill()
 pd()
-rectangle(10,620)
+rectangle(10, 620)
 end_fill()
 pu()
 
-goto(-310,-310)
+goto(-310, -310)
 begin_fill()
 pd()
-rectangle(10,620)
+rectangle(10, 620)
 end_fill()
 pu()
 
-goto(-300,-310)
+goto(-300, -310)
 begin_fill()
 pd()
-rectangle(600,10)
+rectangle(600, 10)
 end_fill()
 pu()
 
-goto(-305,-315)
-color('black','black')
+goto(-305, -315)
+color('black', 'black')
 begin_fill()
 pd()
-rectangle(620,5)
+rectangle(620, 5)
 end_fill()
 pu()
 
-goto(310,-315)
+goto(310, -315)
 begin_fill()
 pd()
-rectangle(5,620)
+rectangle(5, 620)
 end_fill()
 pu()
+
+goto(0, 0)
+color('midnightblue', 'midnightblue')
+begin_fill()
+pd()
+square(300)
+end_fill()
+pu()
+
+goto(0, -150)
+lt(45)
+color('white', 'white')
+begin_fill()
+pd()
+triangle(150*(2**0.5))
+end_fill()
+pu()
+rt(45)
+
+goto(300, -300)
+lt(90)
+color('darkturquoise', 'darkturquoise')
+begin_fill()
+pd()
+circle(150, 180)
+end_fill()
+pu()
+rt(90)
+
+goto(50, -300)
+lt(90)
+color('white', 'white')
+begin_fill()
+pd()
+circle(100, -180)
+end_fill()
+pu()
+rt(90)
+
+goto(200, -300)
+lt(90)
+color('darkslateblue', 'darkslateblue')
+begin_fill()
+pd()
+circle(50, 180)
+end_fill()
+pu()
+rt(270)
+
+x = 150
+y = 0
+for i in range(4):
+    goto(x, y)
+    for j in range(4):
+        color('white', 'white')
+        rt(45)
+        begin_fill()
+        pd()
+        triangle(30 * (2 ** 0.5))
+        end_fill()
+        lt(45)
+        pu()
+        x += 40
+        goto(x, y)
+    x = 150
+    y -= 40
+
+
+
+
 
 pu()
 done()
