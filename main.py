@@ -12,13 +12,14 @@ def circle1(c):
     lt(90)
 
 
-def semicircle(r,ang):
+def semicircle(r, ang):
     '''
     Function is drawing semicircle
     TODO: From Anya
     :return:
     '''
-    circle(r,ang)
+    rt(90)
+    circle(r, ang)
     rt(90)
     bk(r*2)
 
@@ -48,7 +49,7 @@ def triangle(n):
     lt(135)
 
 
-def rectangle(a,b):
+def rectangle(a, b):
     '''
     Function is drawing rectangle
     TODO: From Karolina
@@ -132,35 +133,31 @@ end_fill()
 pu()
 rt(45)
 
-goto(300, -300)
-lt(90)
+goto(0, -300)
 color('cornflowerblue', 'cornflowerblue')
 begin_fill()
 pd()
-circle(150, 180)
+semicircle(150,-180)
 end_fill()
 pu()
-rt(90)
 
 goto(50, -300)
-lt(90)
 color('white', 'white')
 begin_fill()
 pd()
-circle(100, -180)
+semicircle(100, -180)
 end_fill()
 pu()
-rt(90)
 
-goto(200, -300)
-lt(90)
+
+goto(100, -300)
 color('darkslateblue', 'darkslateblue')
 begin_fill()
 pd()
-circle(50, 180)
+semicircle(50, -180)
 end_fill()
 pu()
-rt(270)
+
 
 x = 150
 y = 0
@@ -179,8 +176,6 @@ for i in range(4):
         goto(x, y)
     x = 150
     y -= 40
-
-
 
 
 
