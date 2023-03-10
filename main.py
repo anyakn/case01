@@ -202,7 +202,7 @@ end_fill()
 pu()
 
 x = -170
-y = -210
+y = -230
 for _ in range(3):
     goto(x, y)
     for _ in range(3):
