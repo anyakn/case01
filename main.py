@@ -177,6 +177,77 @@ for i in range(4):
     x = 150
     y -= 40
 
+goto(0, -200) #рисуем тёмно-синий и белый прямоугольник
+color('darkslateblue', 'darkslateblue')
+begin_fill()
+pd()
+rectangle(-150, -100)
+end_fill()
+pu()
+
+goto(-150, -200)
+color('white', 'white')
+begin_fill()
+pd()
+rectangle(-150, -100)
+end_fill()
+pu()
+
+color('midnightblue', 'midnightblue') #рисуем полукруг на тёмнс-синем прямоугольнике
+begin_fill()
+pd()
+rt(90)
+semicircle(50,-180)
+end_fill()
+pu()
+
+x = -170
+y = -210
+for _ in range(3):
+    goto(x, y)
+    for _ in range(3):
+        color('darkslateblue', 'darkslateblue')
+        begin_fill()
+        pd()
+        circle(10)
+        end_fill()
+        pu()
+        x += - 25
+        goto(x, y)
+    x += 75
+    y -= 25
+
+goto(-300, -200)
+color('midnightblue', 'midnightblue') #рисуем полукруг на тёмнс-синем прямоугольнике
+begin_fill()
+pd()
+semicircle(50,-180)
+end_fill()
+pu()
+
+lt(90)
+color('cornflowerblue', 'cornflowerblue')
+begin_fill()
+pd()
+rectangle(300, 200)
+end_fill()
+pu()
+
+goto(-300, 0)
+color('midnightblue', 'midnightblue') #рисуем полукруг на голубой части
+begin_fill()
+pd()
+semicircle(150,180)
+end_fill()
+pu()
+
+goto(-225, 0)
+color('cornflowerblue', 'cornflowerblue') #рисуем голубой полукруг
+begin_fill()
+pd()
+semicircle(75,180)
+end_fill()
+pu()
 
 
 pu()
