@@ -63,7 +63,8 @@ def rectangle(a, b):
 
 
 pu()
-speed(10)
+speed(-1)
+
 
 goto(-300, 300)
 shape('turtle')
@@ -332,6 +333,37 @@ color('darkslateblue', 'darkslateblue')
 begin_fill()
 pd()
 circle1(150)
+end_fill()
+pu()
+
+goto(0,0)
+color('white', 'white')
+begin_fill()
+pd()
+lt(45)
+triangle(300*(2**0.5))
+end_fill()
+pu()
+rt(45)
+
+x = -75
+y = 140
+for _ in range(3):
+    goto(x, y)
+    color('black', 'black')
+    begin_fill()
+    pd()
+    rectangle(3, 150)
+    end_fill()
+    pu()
+    y += 15
+
+goto(-225, 0)
+color('cornflowerblue', 'cornflowerblue')
+begin_fill()
+pd()
+rt(90)
+semicircle(75, -180)
 end_fill()
 pu()
 
