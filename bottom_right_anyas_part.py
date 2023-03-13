@@ -2,7 +2,7 @@ from turtle import *
 
 import functions as fnc
 
-def square_4:
+def square_4():
     '''
     Function is drawing bottom right square
     TODO: From Anya
